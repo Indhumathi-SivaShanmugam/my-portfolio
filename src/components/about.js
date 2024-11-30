@@ -3,7 +3,7 @@ import React from 'react';
 function About() {
   return (
     <section className="about">
-      <h1>M Harinee</h1>
+      <h1>Indhumathi Sivashanmugam</h1>
       <h3>B Tech Computer Science and Engineering (Internet of Things) - Second Year</h3>
       <p>
         I am a passionate and motivated individual with a diverse skill set in technology and problem-solving. With a strong foundation in programming, machine learning, and web development, I strive to build impactful solutions that drive innovation. My expertise spans across various domains, including predictive modeling, deep learning, computer vision, natural language processing, and IoT.
