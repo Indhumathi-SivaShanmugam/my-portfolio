@@ -1,38 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
-  text-align: center;
+  margin-top: 60px; /* Prevent content from hiding behind navbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* General styles for sections */
+section {
+  min-height: 100vh; /* Ensure the content spans full height of the viewport */
+  padding: 50px;
+  background-color: #f9f9f9; /* Optional for better section visibility */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation link styles */
+a {
+  text-decoration: none;
+  color: inherit; /* Match the font color of the surrounding text */
+}
+
+a:hover {
+  color: #00bcd4; /* Highlight color on hover */
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 30px;
+  background-color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-left a,
+.navbar-right a {
+  margin: 0 15px;
+  font-size: 18px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-left a:hover {
+  color: #00bcd4;
 }
+
+.navbar-right img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-right img:hover {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+
+
+
+
